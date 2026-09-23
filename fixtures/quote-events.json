@@ -1,0 +1,5 @@
+{
+  "events": [
+    {"event_id": "evt-demo-1", "point_id": "point-a", "source_seq": 7, "event_type": "unavailable", "observed_at": "2026-08-31T23:58:00+08:00"}
+  ]
+}

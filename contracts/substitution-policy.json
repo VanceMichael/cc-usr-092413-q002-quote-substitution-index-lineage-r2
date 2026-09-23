@@ -1,0 +1,6 @@
+{
+  "version": "quote-substitution-1",
+  "timezone": "Asia/Shanghai",
+  "maximum_quality_delta": 1,
+  "event_types": ["quoted", "unavailable", "restored"]
+}

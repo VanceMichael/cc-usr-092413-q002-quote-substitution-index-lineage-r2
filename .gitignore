@@ -1,0 +1,17 @@
+.env
+.env.*
+*.key
+*.pem
+node_modules/
+coverage/
+data/
+*.sqlite3
+.DS_Store
+.venv/
+venv/
+dist/
+build/
+__pycache__/
+*.py[cod]
+*.db
+*.sqlite
