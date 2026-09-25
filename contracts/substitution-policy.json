@@ -1,6 +1,16 @@
 {
   "version": "quote-substitution-1",
+  "effective_from": "2000-01-01",
   "timezone": "Asia/Shanghai",
   "maximum_quality_delta": 1,
-  "event_types": ["quoted", "unavailable", "restored"]
+  "quality_scale": {"economy": -1, "standard": 0, "premium": 1},
+  "match_region": true,
+  "match_store_tier": true,
+  "approval_ref": "baseline:quote-substitution-1",
+  "event_types": ["quoted", "unavailable", "restored", "quality_change"],
+  "hard_constraints": ["product_sku", "region", "store_tier", "valid_window"],
+  "ranking": ["quality_delta_asc", "priority_asc", "candidate_id_asc"],
+  "gap_policy": "keep_gap_never_carry_stale_price",
+  "chain_policy": "exclude_ancestor_points_to_prevent_cycles",
+  "correction_policy": "recompute_open_periods_only_published_periods_freeze_with_revision_audit"
 }

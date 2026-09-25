@@ -1,5 +1,8 @@
 {
   "events": [
-    {"event_id": "evt-demo-1", "point_id": "point-a", "source_seq": 7, "event_type": "unavailable", "observed_at": "2026-08-31T23:58:00+08:00"}
+    {"event_id": "evt-demo-1", "point_id": "point-a", "source_seq": 7, "event_type": "unavailable", "product_sku": "sku-1", "region": "R1", "store_tier": "tier-x", "quality_grade": "standard", "observed_at": "2026-08-31T23:58:00+08:00"},
+    {"event_id": "evt-demo-2", "point_id": "point-a", "source_seq": 8, "event_type": "restored", "product_sku": "sku-1", "region": "R1", "store_tier": "tier-x", "quality_grade": "standard", "observed_at": "2026-09-02T08:30:00+08:00"},
+    {"event_id": "evt-demo-3", "point_id": "point-a", "source_seq": 9, "event_type": "quoted", "product_sku": "sku-1", "region": "R1", "store_tier": "tier-x", "quality_grade": "standard", "observed_at": "2026-09-02T09:10:00+08:00", "price": 10.5, "currency": "CNY"},
+    {"event_id": "evt-demo-4", "point_id": "point-a", "source_seq": 10, "event_type": "quality_change", "product_sku": "sku-1", "region": "R1", "store_tier": "tier-x", "quality_grade": "standard", "new_quality_grade": "premium", "observed_at": "2026-09-10T09:00:00+08:00", "reason": "供应规格升级"}
   ]
 }

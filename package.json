@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node src/server.js",
     "test": "node --test",
-    "build": "node --check src/server.js && node --check src/quote-event.js"
+    "build": "node --check src/server.js && node --check src/quote-event.js && node --check src/file-store.js && node --check src/policy.js && node --check src/ledger.js && node --check src/index.js"
   },
   "engines": {
     "node": ">=22"
