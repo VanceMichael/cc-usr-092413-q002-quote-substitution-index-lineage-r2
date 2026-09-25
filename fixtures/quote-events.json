@@ -1,5 +1,8 @@
 {
   "events": [
-    {"event_id": "evt-demo-1", "point_id": "point-a", "source_seq": 7, "event_type": "unavailable", "observed_at": "2026-08-31T23:58:00+08:00"}
+    {"event_id": "evt-demo-1", "point_id": "point-a", "source_seq": 7, "source_id": "dc-mart-01", "event_type": "quoted", "price": 12.5, "currency": "CNY", "observed_at": "2026-08-31T09:10:00+08:00", "product_id": "rice-500g", "region": "R1", "store_level": "standard", "spec": {"size": "500g"}, "quality_grade": "B"},
+    {"event_id": "evt-demo-2", "point_id": "point-a", "source_seq": 8, "source_id": "dc-mart-01", "event_type": "unavailable", "reason": "supplier_shortage", "observed_at": "2026-08-31T23:58:00+08:00"},
+    {"event_id": "evt-demo-3", "point_id": "point-a", "source_seq": 9, "source_id": "dc-mart-01", "event_type": "restored", "price": 12.6, "observed_at": "2026-09-01T09:02:00+08:00"},
+    {"event_id": "evt-demo-4", "point_id": "point-a", "source_seq": 10, "source_id": "dc-mart-01", "event_type": "quality_change", "quality_grade": "A", "price": 13.1, "observed_at": "2026-09-02T10:00:00+08:00"}
   ]
 }

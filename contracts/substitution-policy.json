@@ -2,5 +2,22 @@
   "version": "quote-substitution-1",
   "timezone": "Asia/Shanghai",
   "maximum_quality_delta": 1,
-  "event_types": ["quoted", "unavailable", "restored"]
+  "event_types": ["quoted", "unavailable", "restored", "quality_change"],
+  "candidate_selection": {
+    "order": ["same_spec_same_region", "same_spec_adjacent_region", "equivalent_quality_same_region"],
+    "prefer_lower_quality_delta": true,
+    "prefer_closer_store_level": true,
+    "prefer_fresher_quote_ms": 7200000,
+    "require_approved_quality_delta": true
+  },
+  "substitution": {
+    "max_chain_length": 3,
+    "expire_after_ms_without_restore": 604800000,
+    "keep_gap_when_no_candidate": true
+  },
+  "index": {
+    "aggregation": "geometric_mean",
+    "min_points_per_region": 1,
+    "open_period_days": 2
+  }
 }
